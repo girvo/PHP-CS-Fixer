@@ -125,7 +125,8 @@ class Fixer
 
         if ($new != $old) {
             if (!$dryRun) {
-                file_put_contents($file->getRealpath(), $new);
+                //file_put_contents($file->getRealpath(), $new);
+                echo($new);
             }
 
             $fixInfo = array('appliedFixers' => $appliedFixers);
